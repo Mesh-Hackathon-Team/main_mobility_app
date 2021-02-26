@@ -80,7 +80,7 @@ const styles = StyleSheet.create({
 });
 
 const timeExpression = () => {
-    let time = new Date().getHours;
+    let time = new Date().getHours();
     if(time < 12){
         return "Guten Morgen";
     }else if(time<18){
