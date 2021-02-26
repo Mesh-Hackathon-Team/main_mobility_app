@@ -8,6 +8,7 @@ export default function ContainerBoxed(props) {
             {props.children}
         </View>
     );
+}
 
 const styles = StyleSheet.create({
     container: {
