@@ -1,7 +1,11 @@
+import { useNavigation } from "@react-navigation/core";
 import React from "react";
-import { View, Text, StyleSheet, Image } from "react-native";
+import { View, Text, StyleSheet, Image, Button } from "react-native";
+import { TouchableOpacity } from "react-native-gesture-handler";
+import { navigate } from '../RootNavigation';
 
 export default NavigationHeader = (props) => {
+
     return (
         <View style={styles.container}>
             {/* Statusleiste */}
@@ -15,7 +19,9 @@ export default NavigationHeader = (props) => {
             </View>
 
             {/* Profilbild */}
-            <Image style={styles.profilPicture} source={require('../assets/profilBild.jpg')} />
+            <TouchableOpacity onPress={() => navigate('Profile')}>
+                <Image style={styles.profilPicture} source={require('../assets/profilBild.jpg')} />
+            </TouchableOpacity>
         </View>
     );
 }
