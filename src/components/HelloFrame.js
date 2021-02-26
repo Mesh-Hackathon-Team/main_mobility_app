@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { Button, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 
 export default function HelloFrame() {
     return (
@@ -73,6 +73,10 @@ const styles = StyleSheet.create({
         bottom: 20,
         right: 20,
     },
+
+    viewSpace:{
+        height: 20,
+    }
 });
 
 const timeExpression = () => {
