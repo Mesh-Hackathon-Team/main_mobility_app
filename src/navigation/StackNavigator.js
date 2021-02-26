@@ -19,7 +19,7 @@ const MainStackNavigator = ({ navigation }) => {
                 name="Home"
                 component={HomeScreen}
                 options={{
-                    title: 'Instagram',
+                    title: 'Ryde',
                     headerLeft: () => (
                         <View style={{ marginLeft: 25, }}>
 

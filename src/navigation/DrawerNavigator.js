@@ -99,7 +99,7 @@ function MainDrawerNavigator() {
 
 const DrawerCompontent = (props) => (
     <View>
-        <NavigationHeader />
+        <NavigationHeader xp={13} xpwith={10} />
         <DrawerItemList {...props} />
     </View>
 )
