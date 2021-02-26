@@ -1,11 +1,15 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { Provider } from 'react-redux';
 import Main from './src/Main';
+import store from './src/redux/store';
 
-export default function App() {
+function App() {
+
   return (
-    <Main />
+    <Provider store={store}>
+      <Main />
+    </Provider>
   );
 }
 
+export default App;
