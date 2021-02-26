@@ -1,10 +1,11 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { Feather } from '@expo/vector-icons';
-import { createDrawerNavigator } from '@react-navigation/drawer';
+import { createDrawerNavigator, DrawerItemList } from '@react-navigation/drawer';
 import { NavigationContainer } from '@react-navigation/native';
 import { AuthenticationStackNavigator, MainStackNavigator } from "./StackNavigator";
 import MainTabNavigator from './TabNavigator';
+import NavigationHeader from '../components/NavigationHeader';
 
 const Drawer = createDrawerNavigator();
 
@@ -19,6 +20,8 @@ function MainDrawerNavigator() {
             options={{
                 headerTitle: "App"
             }}
+
+            drawerContent={DrawerCompontent}
         >
             <Drawer.Screen
                 name="Home"
@@ -93,5 +96,12 @@ function MainDrawerNavigator() {
         </Drawer.Navigator>
     );
 }
+
+const DrawerCompontent = (props) => (
+    <View>
+        <NavigationHeader />
+        <DrawerItemList {...props} />
+    </View>
+)
 
 export default MainDrawerNavigator;
