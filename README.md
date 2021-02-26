@@ -1,1 +1,3 @@
-# main_mobility_app
+# The Mobility Project
+
+## 🥑 Team
