@@ -1,43 +1,39 @@
 import React, { useState } from "react";
-import { Alert, Modal, StyleSheet, Text, Pressable, View, Dimensions } from "react-native";
+import { Alert, Modal, StyleSheet, Text, Pressable, View, Dimensions, Button, TouchableOpacity } from "react-native";
 const { width, height } = Dimensions.get('window');
 import { Feather } from '@expo/vector-icons';
-import { TouchableOpacity } from "react-native-gesture-handler";
+// import { TouchableOpacity } from "react-native-gesture-handler";
 import LiveTrackerMap from "./LiveTrackerMap";
+
 const LiveTrackerModal = (props) => {
 
     return (
-        <View style={styles.centeredView}>
-            <Modal
-                animationType="slide"
-                transparent={true}
-                visible={props.modalStatus}
-            >
-                <View style={styles.modalView}>
-                    <View style={styles.modalHeader}>
-                        <View style={styles.textContainer}>
-                            <Feather name="radio" color="#00FFB0" size={35} />
-                            <View style={{ marginLeft: 15 }}>
-                                <Text style={styles.trackerTitle}>Tracking aktiv</Text>
-                                <Text style={styles.trackerSubTitle}>seit 12 Minuten</Text>
-                            </View>
+        <Modal
+            animationType="slide"
+            transparent={true}
+            visible={props.modalStatus}
+        >
+            <View style={styles.modalView}>
+                <View style={styles.modalHeader}>
+                    <View style={styles.textContainer}>
+                        <Feather name="radio" color="#00FFB0" size={35} />
+                        <View style={{ marginLeft: 15 }}>
+                            <Text style={styles.trackerTitle}>Tracking aktiv</Text>
+                            <Text style={styles.trackerSubTitle}>seit 12 Minuten</Text>
                         </View>
-                        <TouchableOpacity onPress={props.modalOnCloseAction}><Feather name="x" color="#00FFB0" size={35} /></TouchableOpacity>
                     </View>
-                    <View style={styles.modalMap}>
-                        <LiveTrackerMap />
-                    </View>
-                    <View style={styles.modalContent}>
-                        <Text>Test</Text>
-                    </View>
+                    <TouchableOpacity onPress={props.modalOnCloseAction}>
+                        <Feather name="x" color="#00FFB0" size={35} />
+                    </TouchableOpacity>
                 </View>
-            </Modal>
-            <Pressable
-                style={[styles.button, styles.buttonOpen]}
-            >
-                <Text style={styles.textStyle}>Show Modal</Text>
-            </Pressable>
-        </View>
+                <View style={styles.modalMap}>
+                    <LiveTrackerMap />
+                </View>
+                <View style={styles.modalContent}>
+                    <Text>Test</Text>
+                </View>
+            </View>
+        </Modal >
     );
 };
 

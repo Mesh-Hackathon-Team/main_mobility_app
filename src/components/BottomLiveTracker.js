@@ -9,29 +9,40 @@ export default BottomLiveTracker = (props) => {
 
     const [modalVisible, setModalVisible] = useState(false);
 
+    const showModal = () => {
+        setModalVisible(true);
+    }
+
+    const hideModal = () => {
+        setModalVisible(false);
+    }
+
     return (
-        <View>
-            <TouchableOpacity onPress={() => setModalVisible(true)}><View style={styles.trackerContainer}>
+        <View style={styles.touchContainer}>
+            <TouchableOpacity onPress={showModal} style={styles.trackerContainer}>
                 <Feather name="radio" color="#00FFB0" size={35} />
                 <View style={styles.textContainer}>
                     <Text style={styles.trackerTitle}>Tracking aktiv</Text>
                     <Text style={styles.trackerSubTitle}>Du bist derzeit auf der Linie U4 unterwegs</Text>
-
                 </View>
-            </View>
             </TouchableOpacity>
-            <LiveTrackerModal modalStatus={modalVisible} modalOnCloseAction={() => setModalVisible(false)} />
+            <LiveTrackerModal modalStatus={modalVisible} modalOnCloseAction={() => hideModal()} />
         </View>
     );
 }
 
 const styles = StyleSheet.create({
+    touchContainer: {
+        position: 'absolute',
+        bottom: 0,
+        backgroundColor: "red",
+        height: 70,
+        width: width,
+    },
     trackerContainer: {
         height: 70,
         width: width,
         backgroundColor: "#000752",
-        position: 'absolute',
-        bottom: 0,
         shadowColor: "#000",
         shadowOffset: {
             width: 0,
@@ -45,7 +56,6 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         paddingHorizontal: 25,
         alignItems: 'center'
-
     },
 
     trackerTitle: {
