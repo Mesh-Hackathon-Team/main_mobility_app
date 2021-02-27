@@ -16,6 +16,13 @@ export default function WelcomeSlider() {
 
     const dispatch = useDispatch();
 
+    const moveBody = index => {
+        this.scrollRef.scrollTo({
+            x: index * width,
+            animation: false
+        })
+    }
+
     return (
         <Container>
             <SafeAreaView>
@@ -25,6 +32,7 @@ export default function WelcomeSlider() {
                     pagingEnabled={true}
                     showsHorizontalScrollIndicator={false}
                     scrollEnabled={true}
+                    ref={node => this.scrollRef = node}
                 >
                     <View style={{ height, width }}>
                         <View style={styles.innerContainer}>
@@ -33,7 +41,7 @@ export default function WelcomeSlider() {
                                 <Text style={styles.sliderTitle}>Kontaktlos und entspannt unterwegs.</Text>
                                 <Text style={styles.sliderSubTitle}>Mit Ryde kannst du das Ticket vergessen. Einfach einsteigen und losfahren. Wir übernehmen den Rest.</Text>
                             </View>
-                            <TouchableOpacity>
+                            <TouchableOpacity onPress={() => scrollTo({ x: 0, y: 0, animated: true })}>
                                 <View style={styles.sliderButton}>
                                     <Text style={styles.sliderButtonTitle}>Weiter</Text>
                                     <Feather name="arrow-right" size={26} color="#212529" />
@@ -121,6 +129,7 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         marginTop: 15,
         marginBottom: 15,
+        color: '#000752'
     },
 
     sliderIcon: {
@@ -147,7 +156,7 @@ const styles = StyleSheet.create({
 
     sliderButtonTitle: {
         fontSize: 20,
-        fontWeight: 'bold'
+        fontWeight: 'bold',
     },
 
     optionBox: {
@@ -161,7 +170,9 @@ const styles = StyleSheet.create({
     optionBoxTitle: {
         fontSize: 22,
         fontWeight: 'bold',
+        fontStyle: 'italic',
         marginBottom: 10,
+        color: '#00FFB0',
     },
 
     optionBoxText: {
