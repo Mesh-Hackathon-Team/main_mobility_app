@@ -31,6 +31,7 @@ const styles = StyleSheet.create({
         borderRadius: 30,
         justifyContent:'center',
         alignItems: 'center',
+        marginTop: 20,
     },
 
     textView: {

@@ -5,6 +5,7 @@ import { TouchableOpacity } from "react-native";
 import { StyleSheet, Text, View } from 'react-native';
 
 import HomeScreen from "../screens/HomeScreen";
+import ProfileScreen from "../screens/ProfileScreen";
 
 const Stack = createStackNavigator();
 
@@ -29,6 +30,10 @@ const MainStackNavigator = ({ navigation }) => {
                         </View>
                     ),
                 }}
+            />
+            <Stack.Screen
+                name="Profile"
+                component={ProfileScreen}
             />
         </Stack.Navigator>
     );
