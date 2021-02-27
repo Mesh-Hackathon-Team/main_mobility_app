@@ -6,6 +6,8 @@ import { StyleSheet, Text, View } from 'react-native';
 
 import HomeScreen from "../screens/HomeScreen";
 import ProfileScreen from "../screens/ProfileScreen";
+import NFCScreen from "../screens/NFCScreen";
+import TicketScreen from "../screens/TicketScreen";
 
 const Stack = createStackNavigator();
 
@@ -29,6 +31,32 @@ const MainStackNavigator = ({ navigation }) => {
                             </View>
                         </View>
                     ),
+                    headerRight: () => (
+                        <View style={{ marginRight: 25, flexDirection: 'row' }}>
+                            <View style={{ marginRight: 15 }}>
+                                <TouchableOpacity onPress={() => navigation.navigate('')}><Feather name="compass" size={25} color="black" /></TouchableOpacity>
+                            </View>
+                            <View>
+                                <TouchableOpacity onPress={() => navigation.navigate('')}><Feather name="rss" size={25} color="black" /></TouchableOpacity>
+                            </View>
+                        </View>
+                    ),
+                }}
+            />
+            <Stack.Screen
+                name="nfc"
+                component={NFCScreen}
+                options={{
+                    title: 'Check-In / Check-Out',
+
+                }}
+            />
+            <Stack.Screen
+                name="Ticket"
+                component={TicketScreen}
+                options={{
+                    title: 'Check-In / Check-Out',
+
                 }}
             />
             <Stack.Screen

@@ -2,7 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-export default function Container(props) {
+export default function HomeNearbyListItem(props) {
     return (
         <View style={styles.container}>
             {props.children}

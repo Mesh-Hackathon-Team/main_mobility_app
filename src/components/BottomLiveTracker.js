@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
     trackerContainer: {
         height: 70,
         width: width,
-        backgroundColor: "#000752",
+        backgroundColor: "#000214",
         shadowColor: "#000",
         shadowOffset: {
             width: 0,

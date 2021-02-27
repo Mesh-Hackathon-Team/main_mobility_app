@@ -2,10 +2,10 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-export default function Container(props) {
+export default function NFCScreen() {
     return (
         <View style={styles.container}>
-            {props.children}
+            <Text>Open up App.js to start working on your app!</Text>
             <StatusBar style="auto" />
         </View>
     );
@@ -13,6 +13,9 @@ export default function Container(props) {
 
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: '#ffffff'
+        flex: 1,
+        backgroundColor: '#fff',
+        alignItems: 'center',
+        justifyContent: 'center',
     },
 });

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Alert, Modal, StyleSheet, Text, Pressable, View, Dimensions, Button, TouchableOpacity } from "react-native";
+import { Alert, Modal, StyleSheet, Text, Pressable, View, Dimensions, Button, TouchableOpacity, ScrollView, Image } from "react-native";
 const { width, height } = Dimensions.get('window');
 import { Feather } from '@expo/vector-icons';
 // import { TouchableOpacity } from "react-native-gesture-handler";
@@ -29,70 +29,97 @@ const LiveTrackerModal = (props) => {
                 <View style={styles.modalMap}>
                     <LiveTrackerMap />
                 </View>
-                <View style={styles.modalContent}>
-                    <View style={styles.infoBox}>
-                        <Text>Du </Text>
+                <ScrollView>
+                    <View style={styles.modalContent}>
+                        <View style={styles.infoBox}>
+                            <Image style={styles.infoBoxImage} source={require('../assets/welcomeIcons/nfc.png')} />
+                            <Text style={styles.infoBoxText}>Du kannst die Fahrt jederzeit beenden, indem du an einem NFC Gerät auscheckst. </Text>
+                        </View>
+                        <View style={styles.progressItem}>
+                            <View style={{ flexDirection: 'row' }}>
+                                <View >
+                                    <Text style={styles.progressItemTimeTop}>17:26</Text>
+                                </View>
+                                <View >
+                                    <Text style={styles.progressItemTitleTop}>Aktueller Fahrtpreis</Text>
+                                </View>
+                            </View>
+                            <View >
+                                <Text style={styles.progressItemPriceTop}>2,85€</Text>
+                            </View>
+                        </View>
+                        <View style={{ borderBottomWidth: 4, borderBottomColor: '#F3F5F7', borderRadius: 8, marginVertical: 15 }} />
+                        <View style={styles.progressItem}>
+                            <View style={{ flexDirection: 'row' }}>
+                                <View >
+                                    <Text style={styles.progressItemTime}>17:24</Text>
+                                </View>
+                                <View >
+                                    <Text style={styles.progressItemTitle}>Neuer Radius</Text>
+                                </View>
+                            </View>
+                            <View >
+                                <Text style={styles.progressItemPrice}>+ 1,20€</Text>
+                            </View>
+                        </View>
+                        <View style={styles.progressItem}>
+                            <View style={{ flexDirection: 'row' }}>
+                                <View >
+                                    <Text style={styles.progressItemTime}>16:45</Text>
+                                </View>
+                                <View >
+                                    <Text style={styles.progressItemTitle}>Einstieg Jungfernstieg</Text>
+                                </View>
+                            </View>
+                            <View >
+                                <Text style={styles.progressItemPrice}>+ 0,65€</Text>
+                            </View>
+                        </View>
+                        <View style={styles.progressItem}>
+                            <View style={{ flexDirection: 'row' }}>
+                                <View >
+                                    <Text style={styles.progressItemTime}>16:45</Text>
+                                </View>
+                                <View >
+                                    <Text style={styles.progressItemTitle}>Fahrtbeginn Grundgebühr</Text>
+                                </View>
+                            </View>
+                            <View >
+                                <Text style={styles.progressItemPrice}>+ 1,00€</Text>
+                            </View>
+                        </View>
                     </View>
-                    <View style={styles.progressItem}>
-                        <View style={{ flexDirection: 'row' }}>
-                            <View >
-                                <Text style={styles.progressItemTimeTop}>17:26</Text>
-                            </View>
-                            <View >
-                                <Text style={styles.progressItemTitleTop}>Aktueller Fahrtpreis</Text>
-                            </View>
-                        </View>
-                        <View >
-                            <Text style={styles.progressItemPriceTop}>2,85€</Text>
-                        </View>
-                    </View>
-                    <View style={{ borderBottomWidth: 4, borderBottomColor: '#dee2e6', borderRadius: 8, marginVertical: 15 }} />
-                    <View style={styles.progressItem}>
-                        <View style={{ flexDirection: 'row' }}>
-                            <View >
-                                <Text style={styles.progressItemTime}>17:24</Text>
-                            </View>
-                            <View >
-                                <Text style={styles.progressItemTitle}>Neuer Radius</Text>
-                            </View>
-                        </View>
-                        <View >
-                            <Text style={styles.progressItemPrice}>+ 1,20€</Text>
-                        </View>
-                    </View>
-                    <View style={styles.progressItem}>
-                        <View style={{ flexDirection: 'row' }}>
-                            <View >
-                                <Text style={styles.progressItemTime}>16:45</Text>
-                            </View>
-                            <View >
-                                <Text style={styles.progressItemTitle}>Einstieg Jungfernstieg</Text>
-                            </View>
-                        </View>
-                        <View >
-                            <Text style={styles.progressItemPrice}>+ 0,65€</Text>
-                        </View>
-                    </View>
-                    <View style={styles.progressItem}>
-                        <View style={{ flexDirection: 'row' }}>
-                            <View >
-                                <Text style={styles.progressItemTime}>16:45</Text>
-                            </View>
-                            <View >
-                                <Text style={styles.progressItemTitle}>Fahrtbeginn Grundgebühr</Text>
-                            </View>
-                        </View>
-                        <View >
-                            <Text style={styles.progressItemPrice}>+ 1,00€</Text>
-                        </View>
-                    </View>
-                </View>
+                </ScrollView>
             </View>
         </Modal >
     );
 };
 
 const styles = StyleSheet.create({
+    infoBox: {
+        backgroundColor: '#F3F5F7',
+        padding: 20,
+        borderRadius: 12,
+        marginBottom: 20,
+        flexDirection: 'row',
+        alignItems: 'center'
+    },
+
+    infoBoxImage: {
+        width: 70,
+        height: 70,
+    },
+
+    infoBoxText: {
+        fontSize: 16,
+        marginLeft: 20,
+        flex: 1,
+    },
+
+    modalMap: {
+        borderBottomWidth: 3,
+        borderColor: '#00FFB0',
+    },
     progressItem: {
         flexDirection: 'row',
         justifyContent: 'space-between',

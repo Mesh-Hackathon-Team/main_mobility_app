@@ -12,7 +12,7 @@ const MainTabNavigator = () => {
         <Tab.Navigator
             initialRouteName="Home"
             activeColor="#00FFB0"
-            barStyle={{ backgroundColor: '#000752' }}
+            barStyle={{ backgroundColor: '#000214' }}
         >
             <Tab.Screen
                 name="Home"

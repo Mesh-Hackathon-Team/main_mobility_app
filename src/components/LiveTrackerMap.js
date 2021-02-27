@@ -38,6 +38,6 @@ const styles = StyleSheet.create({
     container: {
     },
     map: {
-        height: 300,
+        height: 250,
     },
 });

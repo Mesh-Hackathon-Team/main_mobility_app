@@ -7,12 +7,20 @@ import FreieFahrtFrame from '../components/FreieFahrtFrame';
 import TrackedFrame from '../components/TrackedFrame';
 import WelcomeFrame from '../components/WelcomeFrame';
 import BottomLiveTracker from '../components/BottomLiveTracker';
+import HomeHeader from '../components/home/HomeHeader';
+import HomeRyteStation from '../components/home/HomeRyteStation';
+import HomeNearbyList from '../components/home/HomeNearbyList';
+import HomeFavouriteRoutes from '../components/home/HomeFavouriteRoutes';
 
 export default function HomeScreen() {
     return (
         <Container >
             <ScrollView >
                 <View style={{ flex: 1, }}>
+                    <HomeHeader />
+                    <HomeRyteStation />
+                    <HomeNearbyList />
+                    <HomeFavouriteRoutes />
                     <ContainerBoxed>
                         <View style={styles.space} />
                         <WelcomeFrame />
