@@ -107,6 +107,8 @@ const styles = StyleSheet.create({
 
     modalContent: {
         paddingHorizontal: 25,
+        backgroundColor: '#ffffff',
+        padding: 25,
     }
 });
 
