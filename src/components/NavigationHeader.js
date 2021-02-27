@@ -14,7 +14,7 @@ export default NavigationHeader = (props) => {
                     <View style={{ backgroundColor: "#4fcfe8", width: `${props.xpwith}%`, height: 13 }} />
                 </View>
                 <View>
-                    <Text>{props.xp} XP</Text>
+                    <Text>{props.xp} km</Text>
                 </View>
             </View>
 
