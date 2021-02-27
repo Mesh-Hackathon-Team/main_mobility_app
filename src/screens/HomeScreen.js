@@ -6,21 +6,32 @@ import ContainerBoxed from '../components/layout/ContainerBoxed';
 import FreieFahrtFrame from '../components/FreieFahrtFrame';
 import TrackedFrame from '../components/TrackedFrame';
 import WelcomeFrame from '../components/WelcomeFrame';
+import BottomLiveTracker from '../components/BottomLiveTracker';
 
 export default function HomeScreen() {
     return (
-        <Container>
-            <ScrollView>
-                <ContainerBoxed>
-                    <View style={styles.space} />
-                    <WelcomeFrame />
-                    <View style={styles.space} />
-                    <FreieFahrtFrame />
-                    <View style={styles.space} />
-                    <TrackedFrame />
-                </ContainerBoxed>
-            </ScrollView>
+        <Container >
+            <ScrollView >
+                <View style={{ flex: 1, }}>
+                    <ContainerBoxed>
+                        <View style={styles.space} />
+                        <WelcomeFrame />
+                        <View style={styles.space} />
+                        <FreieFahrtFrame />
+                        <View style={styles.space} />
+                        <TrackedFrame />
+                        <View style={styles.space} />
+                        <WelcomeFrame />
+                        <View style={styles.space} />
+                        <FreieFahrtFrame />
+                        <View style={styles.space} />
+                        <TrackedFrame />
+                    </ContainerBoxed>
+                </View>
 
+
+            </ScrollView>
+            <BottomLiveTracker />
         </Container>
     );
 }
