@@ -1,6 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { Colors, General } from '../styles';
 
 export default function TrackedFrame() {
     return (
@@ -26,18 +27,17 @@ export default function TrackedFrame() {
 const styles = StyleSheet.create({
     container: {
         overflow: "visible",
-        //backgroundColor: "#99eeff",
-        backgroundColor: "#ffffff",
+        backgroundColor: Colors.WHITE,
         borderRadius: 30,
         justifyContent:'center',
         alignItems: 'center',
-        borderColor: "#c8c7c7",
+        borderColor: Colors.BORDER,
         borderWidth: 2,
     },
 
     trackedText:{
         overflow: "hidden",
-        color: "#000000",
+        color: Colors.FONT,
         fontStyle: "normal",
         fontSize: 22,
     },
