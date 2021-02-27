@@ -16,25 +16,11 @@ export default function HomeScreen() {
     return (
         <Container >
             <ScrollView >
-                <View style={{ flex: 1, }}>
+                <View style={{ flex: 1, marginBottom: 25 }}>
                     <HomeHeader />
                     <HomeRyteStation />
                     <HomeNearbyList />
                     <HomeFavouriteRoutes />
-                    <ContainerBoxed>
-                        <View style={styles.space} />
-                        <WelcomeFrame />
-                        <View style={styles.space} />
-                        <FreieFahrtFrame />
-                        <View style={styles.space} />
-                        <TrackedFrame />
-                        <View style={styles.space} />
-                        <WelcomeFrame />
-                        <View style={styles.space} />
-                        <FreieFahrtFrame />
-                        <View style={styles.space} />
-                        <TrackedFrame />
-                    </ContainerBoxed>
                 </View>
             </ScrollView>
             <BottomLiveTracker />
