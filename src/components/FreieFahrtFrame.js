@@ -16,9 +16,9 @@ export default function FreieFahrtFrame() {
                     </Text>
                 </View>
             </View>
-            
+
             <Image style={styles.image} source={require('../assets/welcomeIcons/train.png')} />
-            
+
             <TouchableOpacity style={styles.buttonRouteAnzeigen}>
                 <Text>
                     {"Route Anzeigen"}
@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
         overflow: "visible",
         backgroundColor: Colors.WHITE,
         borderRadius: 30,
-        justifyContent:'center',
+        justifyContent: 'center',
         alignItems: 'center',
         marginTop: 20,
         borderColor: Colors.BORDER,
@@ -51,37 +51,37 @@ const styles = StyleSheet.create({
         fontSize: 37,
     },
 
-    ankuftszeitText:{
+    ankuftszeitText: {
         overflow: "hidden",
         color: Colors.FONT,
         fontStyle: "normal",
     },
 
-    buttonRouteAnzeigen:{
+    buttonRouteAnzeigen: {
         height: 10,
         backgroundColor: Colors.LIME,
         padding: 20,
         borderRadius: 50,
-        justifyContent:'center',
-        alignItems:'center',
+        justifyContent: 'center',
+        alignItems: 'center',
         position: 'absolute',
         bottom: 20,
         right: 20,
     },
 
-    viewSpace:{
+    viewSpace: {
         height: 20,
     },
 
-    image:{
-        position:'absolute',
+    image: {
+        position: 'absolute',
         height: 65,
         width: 65,
         right: 20,
         top: 0,
     },
 
-    lineBreaker:{
+    lineBreaker: {
         width: 250,
     },
 
