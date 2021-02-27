@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, TouchableOpacity, View, Image } from 'react-native';
-import { Colors, General } from '../styles';
+import { Colors } from '../styles';
 
 export default function FreieFahrtFrame() {
     return (

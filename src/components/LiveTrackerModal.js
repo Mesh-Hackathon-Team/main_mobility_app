@@ -19,7 +19,7 @@ const LiveTrackerModal = (props) => {
                         <Feather name="radio" color="#00FFB0" size={35} />
                         <View style={{ marginLeft: 15 }}>
                             <Text style={styles.trackerTitle}>Tracking aktiv</Text>
-                            <Text style={styles.trackerSubTitle}>seit 12 Minuten</Text>
+                            <Text style={styles.trackerSubTitle}>seit 45 Minuten</Text>
                         </View>
                     </View>
                     <TouchableOpacity onPress={props.modalOnCloseAction}>
@@ -30,7 +30,62 @@ const LiveTrackerModal = (props) => {
                     <LiveTrackerMap />
                 </View>
                 <View style={styles.modalContent}>
-                    <Text>Test</Text>
+                    <View style={styles.infoBox}>
+                        <Text>Du </Text>
+                    </View>
+                    <View style={styles.progressItem}>
+                        <View style={{ flexDirection: 'row' }}>
+                            <View >
+                                <Text style={styles.progressItemTimeTop}>17:26</Text>
+                            </View>
+                            <View >
+                                <Text style={styles.progressItemTitleTop}>Aktueller Fahrtpreis</Text>
+                            </View>
+                        </View>
+                        <View >
+                            <Text style={styles.progressItemPriceTop}>2,85€</Text>
+                        </View>
+                    </View>
+                    <View style={{ borderBottomWidth: 4, borderBottomColor: '#dee2e6', borderRadius: 8, marginVertical: 15 }} />
+                    <View style={styles.progressItem}>
+                        <View style={{ flexDirection: 'row' }}>
+                            <View >
+                                <Text style={styles.progressItemTime}>17:24</Text>
+                            </View>
+                            <View >
+                                <Text style={styles.progressItemTitle}>Neuer Radius</Text>
+                            </View>
+                        </View>
+                        <View >
+                            <Text style={styles.progressItemPrice}>+ 1,20€</Text>
+                        </View>
+                    </View>
+                    <View style={styles.progressItem}>
+                        <View style={{ flexDirection: 'row' }}>
+                            <View >
+                                <Text style={styles.progressItemTime}>16:45</Text>
+                            </View>
+                            <View >
+                                <Text style={styles.progressItemTitle}>Einstieg Jungfernstieg</Text>
+                            </View>
+                        </View>
+                        <View >
+                            <Text style={styles.progressItemPrice}>+ 0,65€</Text>
+                        </View>
+                    </View>
+                    <View style={styles.progressItem}>
+                        <View style={{ flexDirection: 'row' }}>
+                            <View >
+                                <Text style={styles.progressItemTime}>16:45</Text>
+                            </View>
+                            <View >
+                                <Text style={styles.progressItemTitle}>Fahrtbeginn Grundgebühr</Text>
+                            </View>
+                        </View>
+                        <View >
+                            <Text style={styles.progressItemPrice}>+ 1,00€</Text>
+                        </View>
+                    </View>
                 </View>
             </View>
         </Modal >
@@ -38,6 +93,51 @@ const LiveTrackerModal = (props) => {
 };
 
 const styles = StyleSheet.create({
+    progressItem: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        marginVertical: 10,
+    },
+
+    progressItemTime: {
+        fontSize: 16,
+        fontWeight: 'bold',
+        color: '#0A72F3'
+    },
+
+    progressItemTitle: {
+        fontSize: 16,
+        fontWeight: 'bold',
+        color: '#000214',
+        marginLeft: 10,
+    },
+
+    progressItemPrice: {
+        fontSize: 16,
+        fontWeight: 'bold',
+        color: '#000214',
+        marginLeft: 10,
+    },
+
+    progressItemTimeTop: {
+        fontSize: 22,
+        fontWeight: 'bold',
+        color: '#0A72F3'
+    },
+
+    progressItemTitleTop: {
+        fontSize: 22,
+        fontWeight: 'bold',
+        color: '#000214',
+        marginLeft: 10,
+    },
+
+    progressItemPriceTop: {
+        fontSize: 22,
+        fontWeight: 'bold',
+        color: '#000214',
+        marginLeft: 10,
+    },
 
     modalView: {
         backgroundColor: "#ffffff",
@@ -105,6 +205,21 @@ const styles = StyleSheet.create({
         paddingHorizontal: 25,
         backgroundColor: '#ffffff',
         padding: 25,
+    },
+
+    modalContentTitle: {
+        fontSize: 28,
+        fontWeight: 'bold'
+    },
+
+    modalContentPrice: {
+        fontSize: 38,
+        fontWeight: 'bold'
+    },
+
+    modalContentSubTitle: {
+        fontSize: 16,
+        fontWeight: 'bold',
     }
 });
 
