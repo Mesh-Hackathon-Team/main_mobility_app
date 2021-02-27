@@ -14,6 +14,7 @@ export default function WelcomeFrame() {
                     {currentTime[0]}
                     {" Hannah" + ","}
                 </Text>
+                
                 <View style={styles.lineBreaker}>
                     <Text style={styles.ankuftszeitText}>
                         {"sammle noch 412 Punkte um das nächste Level zu erreichen"}
