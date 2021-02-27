@@ -7,7 +7,7 @@ export default function HomeRyteStationListItem(props) {
     return (
         <TouchableOpacity><View style={styles.item}>
             <View style={styles.itemImageContainer}>
-                <Image style={styles.itemImage} source={require('../../assets/typeIcons/bike.png')} />
+                <Image style={styles.itemImage} source={props.image} />
             </View>
 
             <Text style={styles.title}>{props.title}</Text>
