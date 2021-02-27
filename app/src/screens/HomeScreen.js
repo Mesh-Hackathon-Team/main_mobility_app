@@ -16,10 +16,17 @@ export default function HomeScreen() {
     return (
         <Container >
             <ScrollView >
-                <View style={{ flex: 1, marginBottom: 25 }}>
+                <View style={{ flex: 1 }}>
                     <HomeHeader />
                     <HomeRyteStation />
                     <HomeNearbyList />
+                    <HomeFavouriteRoutes />
+                    <HomeFavouriteRoutes />
+                    <HomeFavouriteRoutes />
+
+                    <HomeFavouriteRoutes />
+
+                    <HomeFavouriteRoutes />
                     <HomeFavouriteRoutes />
                 </View>
             </ScrollView>
