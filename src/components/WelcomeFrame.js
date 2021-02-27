@@ -7,9 +7,12 @@ export default function WelcomeFrame() {
         <View style={styles.container}>
             <View>
                 <View style={styles.space}/>
-
+                {//<Image style={styles.image} source={require('')}/>
+}
+                {//console.log(timeExpression()[1])}
+}
                 <Text style={styles.gutenMorgenText}>
-                    {timeExpression()}
+                    {timeExpression()[0]}
                     {" Hannah" + ","}
                 </Text>
                 <View style={styles.lineBreaker}>
@@ -60,11 +63,20 @@ const styles = StyleSheet.create({
 
 const timeExpression = () => {
     let time = new Date().getHours();
+    let out = [];
     if(time < 12){
-        return "Guten Morgen";
+        out.push("Guten Morgen");
     }else if(time<18){
-        return "Hallo";
+        out.push("Hallo");
     }else{
-        return "Guten Abend";
+        out.push("Guten Abend");
     }
+
+    /*if(time >= 6 && time <= 18){
+        out.push('../homeIcons/sun.png');
+    }else{
+
+    }*/
+
+    return out;
 }
