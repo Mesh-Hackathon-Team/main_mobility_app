@@ -28,8 +28,6 @@ export default function HomeScreen() {
                         <TrackedFrame />
                     </ContainerBoxed>
                 </View>
-
-
             </ScrollView>
             <BottomLiveTracker />
         </Container>

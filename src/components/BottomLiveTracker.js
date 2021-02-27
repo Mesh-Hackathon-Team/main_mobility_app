@@ -1,14 +1,17 @@
 import { useNavigation } from "@react-navigation/core";
-import React from "react";
-import { View, Text, StyleSheet, Image, Button, Dimensions, TouchableOpacity, Pressable } from "react-native";
+import React, { useState } from "react";
+import { View, Text, StyleSheet, Image, Button, Dimensions, TouchableOpacity, Pressable, Modal } from "react-native";
 import { Feather } from '@expo/vector-icons';
+import LiveTrackerModal from './LiveTrackerModal';
 const { width, height } = Dimensions.get('window');
 
 export default BottomLiveTracker = (props) => {
 
+    const [modalVisible, setModalVisible] = useState(false);
+
     return (
         <View>
-            <TouchableOpacity><View style={styles.trackerContainer}>
+            <TouchableOpacity onPress={() => setModalVisible(true)}><View style={styles.trackerContainer}>
                 <Feather name="radio" color="#00FFB0" size={35} />
                 <View style={styles.textContainer}>
                     <Text style={styles.trackerTitle}>Tracking aktiv</Text>
@@ -17,6 +20,7 @@ export default BottomLiveTracker = (props) => {
                 </View>
             </View>
             </TouchableOpacity>
+            <LiveTrackerModal modalStatus={modalVisible} modalOnCloseAction={() => setModalVisible(false)} />
         </View>
     );
 }
