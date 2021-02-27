@@ -3,14 +3,18 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import Container from '../components/layout/Container';
 import ContainerBoxed from '../components/layout/ContainerBoxed';
-import HelloFrame from '../components/HelloFrame';
+import FreieFahrtFrame from '../components/FreieFahrtFrame';
 import TrackedFrame from '../components/TrackedFrame';
+import WelcomeFrame from '../components/WelcomeFrame';
 
 export default function HomeScreen() {
     return (
         <Container>
             <ContainerBoxed>
-                <HelloFrame/>
+                <View style={styles.space}/>
+                <WelcomeFrame/>
+                <View style={styles.space}/>
+                <FreieFahrtFrame/>
                 <View style={styles.space}/>
                 <TrackedFrame/>
             </ContainerBoxed>
