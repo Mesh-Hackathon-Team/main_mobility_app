@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { StyleSheet, Text, TouchableOpacity, View, Image } from 'react-native';
 
 export default function FreieFahrtFrame() {
     return (
@@ -9,11 +9,15 @@ export default function FreieFahrtFrame() {
                 <Text style={styles.freieFahrtText}>
                     {"Freie Fahrt"}
                 </Text>
-                <Text style={styles.ankuftszeitText}>
-                    {"Deine geschätzte Ankunftszeit ist\n"}
-                    {"Heute um 12:24"}
-                </Text>
+                <View style={styles.lineBreaker}>
+                    <Text style={styles.ankuftszeitText}>
+                        {"Deine geschätzte Ankunftszeit ist Heute um 12:24"}
+                    </Text>
+                </View>
             </View>
+            
+            <Image style={styles.image} source={require('../assets/welcomeIcons/train.png')} />
+            
             <TouchableOpacity style={styles.buttonRouteAnzeigen}>
                 <Text>
                     {"Route Anzeigen"}
@@ -27,11 +31,14 @@ const styles = StyleSheet.create({
     container: {
         height: 160,
         overflow: "visible",
-        backgroundColor: "#a8dbff",
+        //backgroundColor: "#a8dbff",
+        backgroundColor: "#ffffff",
         borderRadius: 30,
         justifyContent:'center',
         alignItems: 'center',
         marginTop: 20,
+        borderColor: "#c8c7c7",
+        borderWidth: 2,
     },
 
     textView: {
@@ -66,5 +73,18 @@ const styles = StyleSheet.create({
 
     viewSpace:{
         height: 20,
-    }
+    },
+
+    image:{
+        position:'absolute',
+        height: 65,
+        width: 65,
+        right: 20,
+        top: 0,
+    },
+
+    lineBreaker:{
+        width: 250,
+    },
+
 });

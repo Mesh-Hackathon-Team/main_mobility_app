@@ -26,10 +26,13 @@ export default function TrackedFrame() {
 const styles = StyleSheet.create({
     container: {
         overflow: "visible",
-        backgroundColor: "#99eeff",
+        //backgroundColor: "#99eeff",
+        backgroundColor: "#ffffff",
         borderRadius: 30,
         justifyContent:'center',
         alignItems: 'center',
+        borderColor: "#c8c7c7",
+        borderWidth: 2,
     },
 
     trackedText:{
