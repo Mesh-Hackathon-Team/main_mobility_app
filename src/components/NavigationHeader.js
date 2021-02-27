@@ -11,10 +11,10 @@ export default NavigationHeader = (props) => {
             {/* Statusleiste */}
             <View style={{ flexGrow: 1 }}>
                 <View style={styles.progressBar}>
-                    <View style={{ backgroundColor: "#4fcfe8", width: `${props.xpwith}%`, height: 13 }} />
+                    <View style={{ backgroundColor: "#00FFB0", width: `${props.xpwith}%`, height: 13 }} />
                 </View>
                 <View>
-                    <Text>{props.xp} km</Text>
+                    <Text>{props.xp} Punkte</Text>
                 </View>
             </View>
 
@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
     progressBar: {
         height: 13,
         overflow: "visible",
-        backgroundColor: "#99eeff",
+        backgroundColor: "#ECECEC",
         borderRadius: 20,
         marginRight: 15,
         marginTop: "auto",
