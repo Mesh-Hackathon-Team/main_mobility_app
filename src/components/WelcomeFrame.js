@@ -10,7 +10,7 @@ export default function WelcomeFrame() {
 
                 <Text style={styles.gutenMorgenText}>
                     {timeExpression()}
-                    {" Julian" + ","}
+                    {" Hannah" + ","}
                 </Text>
                 <View style={styles.lineBreaker}>
                     <Text style={styles.ankuftszeitText}>
