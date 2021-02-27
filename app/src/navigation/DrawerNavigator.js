@@ -6,6 +6,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { AuthenticationStackNavigator, MainStackNavigator } from "./StackNavigator";
 import MainTabNavigator from './TabNavigator';
 import NavigationHeader from '../components/NavigationHeader';
+import { navigate } from '../RootNavigation';
 
 const Drawer = createDrawerNavigator();
 
@@ -27,70 +28,35 @@ function MainDrawerNavigator() {
                 name="Home"
                 component={MainTabNavigator}
                 options={{
-                    title: 'Home',
-                    drawerIcon: ({ focused, size, color }) => (
-                        <View style={{ marginLeft: 15, }}><Feather name="home" size={size} color={color} /></View>
-                    )
+                    title: '#home',
                 }}
             />
             <Drawer.Screen
-                name="Bookmarks"
+                name="Profile"
                 component={MainTabNavigator}
                 options={{
-                    title: 'Gespeichert',
-                    drawerIcon: ({ focused, size, color }) => (
-                        <View style={{ marginLeft: 15, }}><Feather name="bookmark" size={size} color={color} /></View>
-                    )
+                    title: '#profile',
                 }}
             />
             <Drawer.Screen
-                name="Posts"
+                name="Stations"
                 component={MainTabNavigator}
                 options={{
-                    title: 'Deine Anzeigen',
-                    drawerIcon: ({ focused, size, color }) => (
-                        <View style={{ marginLeft: 15, }}><Feather name="archive" size={size} color={color} /></View>
-                    )
+                    title: '#stations',
                 }}
             />
             <Drawer.Screen
-                name="Safety"
+                name="Aboutus"
                 component={MainTabNavigator}
                 options={{
-                    title: 'Sicherheit',
-                    drawerIcon: ({ focused, size, color }) => (
-                        <View style={{ marginLeft: 15, }}><Feather name="lock" size={size} color={color} /></View>
-                    )
+                    title: '#aboutus',
                 }}
             />
             <Drawer.Screen
-                name="Account"
+                name="supporters"
                 component={MainTabNavigator}
                 options={{
-                    title: 'Konto',
-                    drawerIcon: ({ focused, size, color }) => (
-                        <View style={{ marginLeft: 15, }}><Feather name="user" size={size} color={color} /></View>
-                    )
-                }}
-            />
-            <Drawer.Screen
-                name="Information"
-                component={MainTabNavigator}
-                options={{
-                    title: 'Info',
-                    drawerIcon: ({ focused, size, color }) => (
-                        <View style={{ marginLeft: 15, }}><Feather name="info" size={size} color={color} /></View>
-                    )
-                }}
-            />
-            <Drawer.Screen
-                name="Settings"
-                component={MainTabNavigator}
-                options={{
-                    title: 'Einstellungen',
-                    drawerIcon: ({ focused, size, color }) => (
-                        <View style={{ marginLeft: 15, }}><Feather name="settings" size={size} color={color} /></View>
-                    )
+                    title: '#supporters',
                 }}
             />
         </Drawer.Navigator>
@@ -98,9 +64,21 @@ function MainDrawerNavigator() {
 }
 
 const DrawerCompontent = (props) => (
-    <View>
+    <View style={{ backgroundColor: "#000214", height: "100%" }}>
         <NavigationHeader xp={13} xpwith={10} />
-        <DrawerItemList {...props} />
+        <DrawerItemList
+            {...props}
+            itemStyle={{
+                backgroundColor: "transparent",
+                marginLeft: 30,
+            }}
+            labelStyle={{
+                fontSize: 35,
+                fontWeight: "700",
+                fontStyle: "italic",
+                color: "#00FFB0",
+            }}
+        />
     </View>
 )
 

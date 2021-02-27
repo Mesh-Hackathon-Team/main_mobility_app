@@ -8,16 +8,6 @@ export default NavigationHeader = (props) => {
 
     return (
         <View style={styles.container}>
-            {/* Statusleiste */}
-            <View style={{ flexGrow: 1 }}>
-                <View style={styles.progressBar}>
-                    <View style={{ backgroundColor: "#00FFB0", width: `${props.xpwith}%`, height: 13 }} />
-                </View>
-                <View>
-                    <Text>{props.xp} Punkte</Text>
-                </View>
-            </View>
-
             {/* Profilbild */}
             <TouchableOpacity onPress={() => navigate('Profile')}>
                 <Image style={styles.profilPicture} source={require('../assets/profilBild.jpg')} />
