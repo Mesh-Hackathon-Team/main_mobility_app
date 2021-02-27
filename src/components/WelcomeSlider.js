@@ -42,7 +42,7 @@ export default function WelcomeSlider() {
                                 <Text style={styles.sliderSubTitle}>Mit Ryde kannst du das Ticket vergessen. Einfach einsteigen und losfahren. Wir übernehmen den Rest.</Text>
                             </View>
                             <View style={{ flexGrow: 1, flexDirection: "row", alignItems: "flex-end" }}>
-                                <TouchableOpacity onPress={() => moveBody(1)} style={{ flexShrink: 0, width: width-60}}>
+                                <TouchableOpacity onPress={() => moveBody(1)} style={{ flexShrink: 0, width: width - 60 }}>
                                     <View style={styles.sliderButton}>
                                         <Text style={styles.sliderButtonTitle}>Weiter</Text>
                                         <Feather name="arrow-right" size={26} color="#212529" />
@@ -60,7 +60,7 @@ export default function WelcomeSlider() {
                                 <Text style={styles.sliderSubTitle}>Ryde analysiert und berechnet deine täglichen Routen, und bucht zu den günstigsten Tarifen.</Text>
                             </View>
                             <View style={{ flexGrow: 1, flexDirection: "row", alignItems: "flex-end" }}>
-                                <TouchableOpacity onPress={() => moveBody(2)} style={{ flexShrink: 0, width: width-60}}>
+                                <TouchableOpacity onPress={() => moveBody(2)} style={{ flexShrink: 0, width: width - 60 }}>
                                     <View style={styles.sliderButton}>
                                         <Text style={styles.sliderButtonTitle}>Weiter</Text>
                                         <Feather name="arrow-right" size={26} color="#212529" />
@@ -77,7 +77,7 @@ export default function WelcomeSlider() {
                                 <Text style={styles.sliderSubTitle}>Mit Ryde wird jede Fahrt zum Erlebnis. Fahre umweltfreundlich und erhalte mehr Punkte mit deinen Freunden.</Text>
                             </View>
                             <View style={{ flexGrow: 1, flexDirection: "row", alignItems: "flex-end" }}>
-                                <TouchableOpacity onPress={() => moveBody(3)} style={{ flexShrink: 0, width: width-60}}>
+                                <TouchableOpacity onPress={() => moveBody(3)} style={{ flexShrink: 0, width: width - 60 }}>
                                     <View style={styles.sliderButton}>
                                         <Text style={styles.sliderButtonTitle}>Weiter</Text>
                                         <Feather name="arrow-right" size={26} color="#212529" />
@@ -88,18 +88,20 @@ export default function WelcomeSlider() {
                     </View>
                     <View style={{ height, width }}>
                         <View style={styles.innerContainer}>
-                            <View>
-                                <Text style={styles.sliderTitle}>Wähle deine Zahlungsmethode.</Text>
-                                <TouchableOpacity onPress={() => moveBody(4)}><View style={styles.optionBox}>
-                                    <Text style={styles.optionBoxTitle}>Pay-as-you-Go</Text>
-                                    <Text style={styles.optionBoxText}>Kontaktlos und ohne Ticket ein und aussteigen. Zu jeder Tageszeit. Ryde berechnet den günstigsten Tarif beim aussteigen.</Text>
-                                </View></TouchableOpacity>
-                                <TouchableOpacity onPress={() => moveBody(4)}><View style={styles.optionBox}>
-                                    <Text style={styles.optionBoxTitle}>Unlimited Abo</Text>
-                                    <Text style={styles.optionBoxText}>Für monatlich 69,99€ in allen Radien in deinem ausgewählten Verkehrsunternehmen inklusive Bike Sharing, E-Scooter und mehr.</Text>
-                                </View></TouchableOpacity>
-                                <TouchableOpacity onPress={() => moveBody(4)}><Text style={{ fontSize: 14, fontStyle: 'italic', textAlign: 'center', marginTop: 20, color: '#adb5bd' }}>Ich möchte erstmal so schauen</Text></TouchableOpacity>
-                            </View>
+                            <ScrollView>
+                                <View>
+                                    <Text style={styles.sliderTitle}>Wähle deine Zahlungsmethode.</Text>
+                                    <TouchableOpacity onPress={() => moveBody(4)}><View style={styles.optionBox}>
+                                        <Text style={styles.optionBoxTitle}>Pay-as-you-Go</Text>
+                                        <Text style={styles.optionBoxText}>Kontaktlos und ohne Ticket ein und aussteigen. Zu jeder Tageszeit. Ryde berechnet den günstigsten Tarif beim aussteigen.</Text>
+                                    </View></TouchableOpacity>
+                                    <TouchableOpacity onPress={() => moveBody(4)}><View style={styles.optionBox}>
+                                        <Text style={styles.optionBoxTitle}>Unlimited Abo</Text>
+                                        <Text style={styles.optionBoxText}>Für monatlich 69,99€ in allen Radien in deinem ausgewählten Verkehrsunternehmen inklusive Bike Sharing, E-Scooter und mehr.</Text>
+                                    </View></TouchableOpacity>
+                                    <TouchableOpacity onPress={() => moveBody(4)}><Text style={{ fontSize: 14, fontStyle: 'italic', textAlign: 'center', marginTop: 20, color: '#adb5bd' }}>Ich möchte erstmal so schauen</Text></TouchableOpacity>
+                                </View>
+                            </ScrollView>
                         </View>
                     </View>
                     <View style={{ height, width }}>
