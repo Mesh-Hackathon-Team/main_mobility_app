@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, TouchableOpacity, View, Image } from 'react-native';
-import { Colors } from '../styles';
+import { Colors } from '../styles/';
 
 export default function FreieFahrtFrame() {
     return (
@@ -46,7 +46,7 @@ const styles = StyleSheet.create({
         bottom: 60,
     },
 
-    freieFahrtText:{
+    freieFahrtText: {
         color: Colors.FONT_HEADER,
         fontSize: 37,
     },
