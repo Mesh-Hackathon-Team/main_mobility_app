@@ -77,14 +77,6 @@ const styles = StyleSheet.create({
         borderTopLeftRadius: 25,
         borderTopRightRadius: 25,
         marginTop: 25,
-        shadowColor: "#000",
-        shadowOffset: {
-            width: 0,
-            height: 2,
-        },
-        shadowOpacity: 0.10,
-        shadowRadius: 3.84,
-        elevation: 5,
     },
 
     stationHeader: {
