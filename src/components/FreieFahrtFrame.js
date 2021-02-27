@@ -1,6 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, TouchableOpacity, View, Image } from 'react-native';
+import { Colors, General } from '../styles';;
 
 export default function FreieFahrtFrame() {
     return (
@@ -32,7 +33,7 @@ const styles = StyleSheet.create({
         height: 160,
         overflow: "visible",
         //backgroundColor: "#a8dbff",
-        backgroundColor: "#ffffff",
+        backgroundColor: Colors.WHITE,
         borderRadius: 30,
         justifyContent:'center',
         alignItems: 'center',
@@ -61,7 +62,7 @@ const styles = StyleSheet.create({
 
     buttonRouteAnzeigen:{
         height: 10,
-        backgroundColor: "#00FFB0",
+        backgroundColor: Colors.LIME,
         padding: 20,
         borderRadius: 50,
         justifyContent:'center',
