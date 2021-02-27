@@ -2,6 +2,7 @@
 The Mobility Project
 
 # Slogan der Solution
+The smart commute
 
 # Kurzbeschreibung der Solution und PowerPoint-Präsentation mit den Schlüsselbotschaften
 Solution / Prototyp Link / Documentation / Beschreibung
