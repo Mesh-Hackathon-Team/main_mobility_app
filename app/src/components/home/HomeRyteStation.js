@@ -14,25 +14,25 @@ const OPTIONS = [
         id: '2',
         title: 'E-Scooter',
         subtitle: '1/6',
-        image: require('../../assets/homeIcons/moon.png')
+        image: require('../../assets/typeIcons/kick-scooter.png')
     },
     {
         id: '3',
         title: 'E-Autos',
         subtitle: '0/5',
-        image: require('../../assets/typeIcons/bike.png')
+        image: require('../../assets/typeIcons/car.png')
     },
     {
         id: '4',
         title: 'Metro',
         subtitle: 'in 5 Minuten',
-        image: require('../../assets/typeIcons/bike.png')
+        image: require('../../assets/typeIcons/metro.png')
     },
     {
         id: '5',
         title: 'Bus',
         subtitle: 'in 12 Minuten',
-        image: require('../../assets/typeIcons/bike.png')
+        image: require('../../assets/typeIcons/Bus.png')
     },
 
 ];
