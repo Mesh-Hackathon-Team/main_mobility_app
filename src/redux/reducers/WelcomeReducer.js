@@ -1,13 +1,13 @@
 import { SWITCH_WELCOME_STATUS } from '../actionTypes';
 
 const initialState = {
-    status: true
+    status: 'opened'
 }
 
 const WelcomeReducer = (state = initialState, action) => {
     switch (action.type) {
         case SWITCH_WELCOME_STATUS:
-            return { status: false };
+            return { status: 'closed' };
         default:
             return state;
     }
