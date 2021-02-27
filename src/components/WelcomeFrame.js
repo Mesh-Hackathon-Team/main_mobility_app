@@ -5,7 +5,7 @@ import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 export default function WelcomeFrame() {
     return (
         <View style={styles.container}>
-            <View style={styles.centerView}>
+            <View>
                 <View style={styles.space}/>
 
                 <Text style={styles.gutenMorgenText}>
@@ -30,12 +30,9 @@ const styles = StyleSheet.create({
         overflow: "visible",
         borderRadius: 30,
         justifyContent:'center',
-        //alignItems: 'center',
+        alignItems: 'center',
     },
 
-    centerView:{
-        left: 20,
-    },
 
     gutenMorgenText:{
         overflow: "hidden",
@@ -66,7 +63,7 @@ const timeExpression = () => {
     if(time < 12){
         return "Guten Morgen";
     }else if(time<18){
-        return "Guten Tag";
+        return "Hallo";
     }else{
         return "Guten Abend";
     }

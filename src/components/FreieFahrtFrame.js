@@ -61,7 +61,7 @@ const styles = StyleSheet.create({
 
     buttonRouteAnzeigen:{
         height: 10,
-        backgroundColor: "#4fcfe8",
+        backgroundColor: "#00FFB0",
         padding: 20,
         borderRadius: 50,
         justifyContent:'center',
