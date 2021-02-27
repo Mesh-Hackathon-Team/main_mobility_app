@@ -48,7 +48,7 @@ export default function HomeHeader(props) {
     return (
         <View>
             <View style={styles.container}>
-                <Text style={styles.headerTitle}>Howdy Laura, 👋</Text>
+                <Text style={styles.headerTitle}>Howdy Pauline, 👋</Text>
                 <Text style={styles.headerSubTitle}>wo werden wir Dich heute hin begleiten?</Text>
             </View>
             <SafeAreaView>
