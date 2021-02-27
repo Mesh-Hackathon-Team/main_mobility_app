@@ -1,6 +1,8 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, TouchableOpacity, View, Image } from 'react-native';
+import { color } from 'react-native-reanimated';
+import { Colors, General } from '../styles';
 
 export default function WelcomeFrame() {
     const currentTime = timeExpression();
@@ -39,14 +41,14 @@ const styles = StyleSheet.create({
 
     gutenMorgenText: {
         overflow: "hidden",
-        color: "#000000",
+        color: Colors.FONT_HEADER,
         fontStyle: "normal",
         fontSize: 30,
     },
 
     ankuftszeitText: {
         overflow: "hidden",
-        color: "#000000",
+        color: Colors.FONT,
         fontStyle: "normal",
         left: 10,
     },

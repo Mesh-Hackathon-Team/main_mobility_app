@@ -32,13 +32,12 @@ const styles = StyleSheet.create({
     container: {
         height: 160,
         overflow: "visible",
-        //backgroundColor: "#a8dbff",
         backgroundColor: Colors.WHITE,
         borderRadius: 30,
         justifyContent: 'center',
         alignItems: 'center',
         marginTop: 20,
-        borderColor: "#c8c7c7",
+        borderColor: Colors.BORDER,
         borderWidth: 2,
     },
 
@@ -47,16 +46,14 @@ const styles = StyleSheet.create({
         bottom: 60,
     },
 
-    freieFahrtText: {
-        overflow: "hidden",
-        color: "#000000",
+    freieFahrtText:{
+        color: Colors.FONT_HEADER,
         fontSize: 37,
-        fontStyle: "normal",
     },
 
     ankuftszeitText: {
         overflow: "hidden",
-        color: "#000000",
+        color: Colors.FONT,
         fontStyle: "normal",
     },
 
