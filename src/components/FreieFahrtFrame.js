@@ -2,14 +2,10 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 
-export default function HelloFrame() {
+export default function FreieFahrtFrame() {
     return (
         <View style={styles.container}>
             <View style={styles.textView}>
-                <Text style={styles.gutenMorgenText}>
-                    {timeExpression()}
-                    {" Julian" + ","}
-                </Text>
                 <Text style={styles.freieFahrtText}>
                     {"Freie Fahrt"}
                 </Text>
@@ -29,7 +25,7 @@ export default function HelloFrame() {
 
 const styles = StyleSheet.create({
     container: {
-        height: 200,
+        height: 160,
         overflow: "visible",
         backgroundColor: "#a8dbff",
         borderRadius: 30,
@@ -41,13 +37,6 @@ const styles = StyleSheet.create({
     textView: {
         position: 'absolute',
         bottom: 60,
-    },
-
-    gutenMorgenText:{
-        overflow: "hidden",
-        color: "#000000",
-        fontStyle: "normal",
-        fontSize: 20,
     },
 
     freieFahrtText:{
@@ -79,14 +68,3 @@ const styles = StyleSheet.create({
         height: 20,
     }
 });
-
-const timeExpression = () => {
-    let time = new Date().getHours();
-    if(time < 12){
-        return "Guten Morgen";
-    }else if(time<18){
-        return "Guten Tag";
-    }else{
-        return "Guten Abend";
-    }
-}
