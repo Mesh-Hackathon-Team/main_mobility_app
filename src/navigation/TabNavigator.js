@@ -11,14 +11,14 @@ const MainTabNavigator = () => {
     return (
         <Tab.Navigator
             initialRouteName="Home"
-            activeColor="#6930c3"
-            barStyle={{ backgroundColor: '#ffffff' }}
+            activeColor="#00FFB0"
+            barStyle={{ backgroundColor: '#000752' }}
         >
             <Tab.Screen
                 name="Home"
                 component={MainStackNavigator}
                 options={{
-                    tabBarLabel: 'Home',
+                    tabBarLabel: 'Ryde',
                     tabBarIcon: ({ color }) => (
                         <Feather name="home" color={color} size={22} />
                     ),
