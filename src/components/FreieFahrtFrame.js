@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, TouchableOpacity, View, Image } from 'react-native';
-import { Colors, General } from '../styles';;
+import { Colors, General } from '../styles';
 
 export default function FreieFahrtFrame() {
     return (
@@ -16,9 +16,9 @@ export default function FreieFahrtFrame() {
                     </Text>
                 </View>
             </View>
-            
+
             <Image style={styles.image} source={require('../assets/welcomeIcons/train.png')} />
-            
+
             <TouchableOpacity style={styles.buttonRouteAnzeigen}>
                 <Text>
                     {"Route Anzeigen"}
@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
         //backgroundColor: "#a8dbff",
         backgroundColor: Colors.WHITE,
         borderRadius: 30,
-        justifyContent:'center',
+        justifyContent: 'center',
         alignItems: 'center',
         marginTop: 20,
         borderColor: "#c8c7c7",
@@ -47,44 +47,44 @@ const styles = StyleSheet.create({
         bottom: 60,
     },
 
-    freieFahrtText:{
+    freieFahrtText: {
         overflow: "hidden",
         color: "#000000",
         fontSize: 37,
         fontStyle: "normal",
     },
 
-    ankuftszeitText:{
+    ankuftszeitText: {
         overflow: "hidden",
         color: "#000000",
         fontStyle: "normal",
     },
 
-    buttonRouteAnzeigen:{
+    buttonRouteAnzeigen: {
         height: 10,
         backgroundColor: Colors.LIME,
         padding: 20,
         borderRadius: 50,
-        justifyContent:'center',
-        alignItems:'center',
+        justifyContent: 'center',
+        alignItems: 'center',
         position: 'absolute',
         bottom: 20,
         right: 20,
     },
 
-    viewSpace:{
+    viewSpace: {
         height: 20,
     },
 
-    image:{
-        position:'absolute',
+    image: {
+        position: 'absolute',
         height: 65,
         width: 65,
         right: 20,
         top: 0,
     },
 
-    lineBreaker:{
+    lineBreaker: {
         width: 250,
     },
 
