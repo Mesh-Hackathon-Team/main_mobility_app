@@ -85,7 +85,7 @@ const timeExpression = () => {
     if (time >= 6 && time <= 18) {
         out.push(require('../assets/homeIcons/sun.png'));
     } else {
-        out.push(require('../assets/welcomeIcons/moon.png'));
+        out.push(require('../assets/homeIcons/moon.png'));
     }
 
     return out;
