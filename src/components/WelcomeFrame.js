@@ -1,18 +1,22 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { StyleSheet, Text, TouchableOpacity, View, Image } from 'react-native';
 
 export default function WelcomeFrame() {
+    const currentTime = timeExpression();
+    console.log(currentTime);
     return (
         <View style={styles.container}>
             <View>
                 <View style={styles.space}/>
-                {//<Image style={styles.image} source={require('')}/>
-}
-                {//console.log(timeExpression()[1])}
-}
+                <Image style={styles.image} source={currentTime[1]}/>
+                
+                
+                {console.log(timeExpression()[1])
+                }
+
                 <Text style={styles.gutenMorgenText}>
-                    {timeExpression()[0]}
+                    {currentTime[0]}
                     {" Hannah" + ","}
                 </Text>
                 <View style={styles.lineBreaker}>
@@ -59,6 +63,11 @@ const styles = StyleSheet.create({
         width: 250,
     },
 
+    image:{
+        height: 50,
+        width: 50,
+    },
+
 });
 
 const timeExpression = () => {
@@ -66,17 +75,17 @@ const timeExpression = () => {
     let out = [];
     if(time < 12){
         out.push("Guten Morgen");
-    }else if(time<18){
+    }else if(time < 18){
         out.push("Hallo");
     }else{
         out.push("Guten Abend");
     }
 
-    /*if(time >= 6 && time <= 18){
-        out.push('../homeIcons/sun.png');
+    if(time >= 6 && time <= 18){
+        out.push(require('../assets/homeIcons/sun.png'));
     }else{
-
-    }*/
+        out.push(require('../assets/welcomeIcons/train.png'));
+    }
 
     return out;
 }
