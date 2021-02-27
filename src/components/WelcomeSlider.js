@@ -106,7 +106,7 @@ export default function WelcomeSlider() {
                             <TouchableOpacity onPress={() => dispatch(switchWelcomeStatus('opened'))}>
                                 <View style={styles.sliderButton}>
                                     <Text style={styles.sliderButtonTitle}>Los geht's</Text>
-                                    <Feather name="arrow-right" size={26} color="#212529" />
+                                    <Feather name="heart" size={26} color="#212529" />
                                 </View>
                             </TouchableOpacity>
                         </View>
