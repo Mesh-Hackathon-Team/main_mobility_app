@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
     touchContainer: {
         position: 'absolute',
         bottom: 0,
-        backgroundColor: "red",
+        backgroundColor: "#000752",
         height: 70,
         width: width,
     },
