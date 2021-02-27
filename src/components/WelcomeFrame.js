@@ -4,16 +4,11 @@ import { StyleSheet, Text, TouchableOpacity, View, Image } from 'react-native';
 
 export default function WelcomeFrame() {
     const currentTime = timeExpression();
-    console.log(currentTime);
     return (
         <View style={styles.container}>
             <View>
                 <View style={styles.space}/>
                 <Image style={styles.image} source={currentTime[1]}/>
-                
-                
-                {console.log(timeExpression()[1])
-                }
 
                 <Text style={styles.gutenMorgenText}>
                     {currentTime[0]}
@@ -84,7 +79,7 @@ const timeExpression = () => {
     if(time >= 6 && time <= 18){
         out.push(require('../assets/homeIcons/sun.png'));
     }else{
-        out.push(require('../assets/welcomeIcons/train.png'));
+        out.push(require('../assets/homeIcons/moon.png'));
     }
 
     return out;
