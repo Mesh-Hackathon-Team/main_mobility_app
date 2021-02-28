@@ -9,6 +9,9 @@ The smart commute
 # Kurzbeschreibung der Solution und PowerPoint-Präsentation mit den Schlüsselbotschaften
 Solution / Prototyp Link / Documentation / Beschreibung
 
+<img src="images/Homescreen.png" width="400">
+<img src="images/Tracking.png" width="400">
+
 # Name des Teams und der einzelnen Teammitglieder
 - Benedikt Kupfer
 - Caspar Gossmann
