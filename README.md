@@ -1,6 +1,6 @@
 ## Team: E06 Challenge: Environmental
 ![Banner](images/banner.png)
-# Ryde - The smart commute
+# RYDE - The smart commute
 Titel & Slogan der Solution
 
 # Über das Projekt
@@ -20,8 +20,7 @@ Durch Ryde werden alle Möglichkeiten gebündelt und das Reisen entspannter. So 
 
 
 
-<img src="images/Homescreen.png" width="400">
-<img src="images/Tracking.png" width="400">
+<img src="images/app_type_two.png">
 
 # 🍻 Teammitglieder
 - Benedikt Kupfer
