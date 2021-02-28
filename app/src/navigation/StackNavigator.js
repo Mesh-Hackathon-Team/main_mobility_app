@@ -34,10 +34,10 @@ const MainStackNavigator = ({ navigation }) => {
                     headerRight: () => (
                         <View style={{ marginRight: 25, flexDirection: 'row' }}>
                             <View style={{ marginRight: 15 }}>
-                                <TouchableOpacity onPress={() => navigation.navigate('')}><Feather name="compass" size={25} color="black" /></TouchableOpacity>
+                                <TouchableOpacity><Feather name="compass" size={25} color="black" /></TouchableOpacity>
                             </View>
                             <View>
-                                <TouchableOpacity onPress={() => navigation.navigate('')}><Feather name="rss" size={25} color="black" /></TouchableOpacity>
+                                <TouchableOpacity><Feather name="rss" size={25} color="black" /></TouchableOpacity>
                             </View>
                         </View>
                     ),
