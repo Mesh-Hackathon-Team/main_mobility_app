@@ -7,7 +7,7 @@ export default ProfileScreen = ({ navigation, route }) => (
     <ContainerBoxed>
         <View style={{ marginVertical: 20 }}>
             <Image style={styles.profilPicture} source={require('../assets/profilBild.jpg')} />
-            <Text style={styles.name}>Hannah Müller</Text>
+            <Text style={styles.name}>Pauline Müller</Text>
             <View style={{flexDirection: "row", marginTop: 10}}>
                 <Text style={styles.tabItem}>Übersicht</Text>
                 <Text style={styles.tabItem}>Erfolge</Text>
