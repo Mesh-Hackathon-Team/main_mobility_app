@@ -6,7 +6,7 @@ Titel & Slogan der Solution
 # Über das Projekt
 Wie pendeln wir morgen? Ryde ist die Antwort. Ryde bündelt alle Verkehrsmöglichkeiten einer Stadt in einer App und ermöglicht kontaktloses Ein und Aussteigen sowie nahtlose Übergänge zu anderen Verkehrsmitteln. 
 
-### Kontaktloses Bezahlen 
+### ✨ Kontaktloses Bezahlen 
 Ryde macht das Pendeln und Reisen entspannter und einfacher. Mit NFC CheckIn und CheckOut Points an Haltestellen, in Bus und Bahn und auf den EBikes etc. registriert die App den Einstieg und berechnet beim Ausstieg im Hintergrund den besten Preis für den Fahrgast. Gleichzeitig gibt es für Pendler ein einfaches Abo Model, was unbegrenzte Verkehrsmöglichkeiten zu jeder Uhrzeit ermöglicht. 
 
 ### Ryde Stations by EnBW
