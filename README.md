@@ -1,10 +1,7 @@
 ## Team: E06 Challenge: Environmental
 ![Banner](images/banner.png)
-# Ryde
-Titel der Solution
-
-## The smart commute
-Slogan der Solution
+# Ryde - The smart commute
+Titel & Slogan der Solution
 
 # Über das Projekt
 Wie pendeln wir morgen? Ryde ist die Antwort. Ryde bündelt alle Verkehrsmöglichkeiten einer Stadt in einer App und ermöglicht kontaktloses Ein und Aussteigen sowie nahtlose Übergänge zu anderen Verkehrsmitteln. 
