@@ -170,7 +170,7 @@ const styles = StyleSheet.create({
         backgroundColor: "#ffffff",
         paddingTop: 35,
         flex: 1,
-        backgroundColor: '#000752'
+        backgroundColor: '#000214'
     },
     button: {
         borderRadius: 20,
@@ -196,7 +196,7 @@ const styles = StyleSheet.create({
     modalHeader: {
         height: 70,
         width: width,
-        backgroundColor: "#000752",
+        backgroundColor: "#000214",
         shadowColor: "#000",
         shadowOffset: {
             width: 0,
@@ -232,6 +232,7 @@ const styles = StyleSheet.create({
         paddingHorizontal: 25,
         backgroundColor: '#ffffff',
         padding: 25,
+        paddingBottom: 400,
     },
 
     modalContentTitle: {
