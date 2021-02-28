@@ -26,7 +26,7 @@ const OPTIONS = [
         id: '4',
         title: 'Metro',
         subtitle: 'in 5 Minuten',
-        image: require('../../assets/typeIcons/metro.png')
+        image: require('../../assets/typeIcons/metro2.png')
     },
     {
         id: '5',
