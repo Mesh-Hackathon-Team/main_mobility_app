@@ -1,18 +1,29 @@
-# e06
+## Team: E06 Challenge: Environmental
 ![Banner](images/banner.png)
-# Titel der Solution
-The Mobility Project
+# Ryde
+Titel der Solution
 
-# Slogan der Solution
-The smart commute
+## The smart commute
+Slogan der Solution
 
-# Kurzbeschreibung der Solution und PowerPoint-Präsentation mit den Schlüsselbotschaften
-Solution / Prototyp Link / Documentation / Beschreibung
+# Über das Projekt
+Wie pendeln wir morgen? Ryde ist die Antwort. Ryde bündelt alle Verkehrsmöglichkeiten einer Stadt in einer App und ermöglicht kontaktloses Ein und Aussteigen sowie nahtlose Übergänge zu anderen Verkehrsmitteln. 
+
+### Kontaktloses Bezahlen 
+Ryde macht das Pendeln und Reisen entspannter und einfacher. Mit NFC CheckIn und CheckOut Points an Haltestellen, in Bus und Bahn und auf den EBikes etc. registriert die App den Einstieg und berechnet beim Ausstieg im Hintergrund den besten Preis für den Fahrgast. Gleichzeitig gibt es für Pendler ein einfaches Abo Model, was unbegrenzte Verkehrsmöglichkeiten zu jeder Uhrzeit ermöglicht. 
+
+### Ryde Stations by EnBW
+Ein wichtiger Bestandteil der nahtlosen Übergänge sind die Ryde Stations powered by EnBW, die an Verkehrsknotenpunkten in den Städten (Hauptbahnhof etc.) schnelle Umsteige- und Fahrt-Möglichkeiten anbieten. Mit EnBW HyperNetz Schnellladern sind alle Fortbewegungsmittel jederzeit 100% Einsatzbereit an den Ryde Stations und ermöglichen somit nahtlose Weiterfahrten. 
+
+### Faktor Umwelt
+Durch Ryde werden alle Möglichkeiten gebündelt und das Reisen entspannter. So werden mehr Pendler von der Straße auf Ryde umsteigen und alle Vorteile genießen. Dadurch wird die Umwelt deutlich geschont. Alle Fortbewegungsmöglichkeiten, uanbhängig von Bus und Bahn, sind E-Mobility Lösungen, die 100% elektrisch fahren und an den Ryde Stations durch die EnBW HyperNetz Schnellladern immer zu 100% Startklar sind.
+
+
 
 <img src="images/Homescreen.png" width="400">
 <img src="images/Tracking.png" width="400">
 
-# Name des Teams und der einzelnen Teammitglieder
+## Teammitglieder
 - Benedikt Kupfer
 - Caspar Gossmann
 - Jonas Buschbacher
