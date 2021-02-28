@@ -4,20 +4,20 @@
 Titel & Slogan der Solution
 
 # Über das Projekt
-Wie pendeln wir morgen? Ryde ist die Antwort. Ryde bündelt alle Verkehrsmöglichkeiten einer Stadt in einer App und ermöglicht kontaktloses Ein und Aussteigen sowie nahtlose Übergänge zu anderen Verkehrsmitteln. 
+Wie pendeln wir morgen? Ryde ist die Antwort. Ryde bündelt alle Verkehrsmöglichkeiten einer Stadt in einer App und ermöglicht kontaktloses Ein- und Aussteigen, sowie nahtlose Übergänge zu anderen Verkehrsmitteln und den last-mile-Transport. 
 
 ### ✨ Kontaktloses Bezahlen 
-Ryde macht das Pendeln und Reisen entspannter und einfacher. Mit NFC CheckIn und CheckOut Points an Haltestellen, in Bus und Bahn und auf den EBikes etc. registriert die App den Einstieg und berechnet beim Ausstieg im Hintergrund den besten Preis für den Fahrgast. Gleichzeitig gibt es für Pendler ein einfaches Abo Model, was unbegrenzte Verkehrsmöglichkeiten zu jeder Uhrzeit ermöglicht. 
+Ryde macht das Pendeln und Reisen entspannter und einfacher. Mit NFC CheckIn und CheckOut Points an Haltestellen, in Bus und Bahn sowie auf den E-Bikes bzw. E-Scooter registriert die App den Einstieg.  Beim Ausstieg brechnet sie im Hintergrund den besten Preis für den Fahrgast. Gleichzeitig gibt es für Pendler ein einfaches Abo Model, was unbegrenzte Verkehrsmöglichkeiten zu jeder Uhrzeit ermöglicht. 
 
 ### 🔋 Ryde Stations by EnBW
-Ein wichtiger Bestandteil der nahtlosen Übergänge sind die Ryde Stations powered by EnBW, die an Verkehrsknotenpunkten in den Städten (Hauptbahnhof etc.) schnelle Umsteige- und Fahrt-Möglichkeiten anbieten. Mit EnBW HyperNetz Schnellladern sind alle Fortbewegungsmittel jederzeit 100% Einsatzbereit an den Ryde Stations und ermöglichen somit nahtlose Weiterfahrten. 
+Ein wichtiger Bestandteil der nahtlosen Übergänge sind die Ryde Stations (powered by EnBW), die an Verkehrsknotenpunkten in den Städten (Hauptbahnhof etc.) schnelle Umsteige- und Fahrt-Möglichkeiten anbieten. Mit EnBW HyperNetz Schnellladern sind alle Fortbewegungsmittel jederzeit 100% Einsatzbereit an den Ryde Stations und ermöglichen somit nahtlose Weiterfahrten. 
 
 ### 📊 Transportation wird Realtime
-Mit Ryde App Nutzerdaten Analysen und Sammlungen, können Unternehmen und Verkehrsbetriebe Realtime Daten zu ihren Strecken einsehen und analysieren. Das ermöglicht schnelles reagieren auf Verkehrveränderungen.
-So können sogar vorhersagen für zukunftige Verkehrssituationen getroffen werden, Fahrpläne variabel erzeugt werden und Peaks bzw. Gaps langfristig beseitig werden.
+Die von der Ryde App gewonnene Nutzerdaten können Unternehmen und Verkehrsbetriebe zu ihren Strecken einsehen. Die Analyse dieser Realtime-Daten ermöglicht schnelles reagieren auf Verkehrveränderungen
+So können sogar Vorhersagen für zukunftige Verkehrssituationen getroffen werden, Fahrpläne variabel erzeugt werden und Peaks bzw. Gaps langfristig beseitig werden.
 
 ### 🍀 Faktor Umwelt
-Durch Ryde werden alle Möglichkeiten gebündelt und das Reisen entspannter. So werden mehr Pendler von der Straße auf Ryde umsteigen und alle Vorteile genießen. Dadurch wird die Umwelt deutlich geschont. Alle Fortbewegungsmöglichkeiten, uanbhängig von Bus und Bahn, sind E-Mobility Lösungen, die 100% elektrisch fahren und an den Ryde Stations durch die EnBW HyperNetz Schnellladern immer zu 100% Startklar sind.
+Durch Ryde werden alle Möglichkeiten gebündelt und das Reisen entspannter. So werden mehr Pendler von der Straße auf Ryde umsteigen und alle Vorteile genießen. Dadurch wird die Umwelt deutlich geschont. Alle Fortbewegungsmöglichkeiten, uanbhängig von Bus und Bahn, sind E-Mobility Lösungen, die 100% elektrisch fahren und an den Ryde Stations durch die EnBW HyperNetz Schnellladern immer zu 100% startklar sind.
 
 <img src="images/app_type_two.png">
 
