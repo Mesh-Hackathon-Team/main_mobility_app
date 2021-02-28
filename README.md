@@ -1,4 +1,5 @@
 # e06
+![Banner](images/banner.png)
 # Titel der Solution
 The Mobility Project
 
