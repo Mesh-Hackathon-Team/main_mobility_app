@@ -19,6 +19,7 @@ Mit Ryde App Nutzerdaten Analysen und Sammlungen, können Unternehmen und Verkeh
 Durch Ryde werden alle Möglichkeiten gebündelt und das Reisen entspannter. So werden mehr Pendler von der Straße auf Ryde umsteigen und alle Vorteile genießen. Dadurch wird die Umwelt deutlich geschont. Alle Fortbewegungsmöglichkeiten, uanbhängig von Bus und Bahn, sind E-Mobility Lösungen, die 100% elektrisch fahren und an den Ryde Stations durch die EnBW HyperNetz Schnellladern immer zu 100% Startklar sind.
 
 
+### 📱 Unsere App
 
 <img src="images/app_type_two.png">
 
@@ -29,7 +30,7 @@ Durch Ryde werden alle Möglichkeiten gebündelt und das Reisen entspannter. So 
 - Julian Ortlieb
 - Patrick Egen
 
-# 📱 Get the App
+# Get the App
 ## Self Installation 
 Ryde is build with Expo and React-Native as a Cross Plattform Application for Android and iOS. 
 
