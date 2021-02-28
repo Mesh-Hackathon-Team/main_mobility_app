@@ -13,7 +13,8 @@ Ryde macht das Pendeln und Reisen entspannter und einfacher. Mit NFC CheckIn und
 Ein wichtiger Bestandteil der nahtlosen Übergänge sind die Ryde Stations powered by EnBW, die an Verkehrsknotenpunkten in den Städten (Hauptbahnhof etc.) schnelle Umsteige- und Fahrt-Möglichkeiten anbieten. Mit EnBW HyperNetz Schnellladern sind alle Fortbewegungsmittel jederzeit 100% Einsatzbereit an den Ryde Stations und ermöglichen somit nahtlose Weiterfahrten. 
 
 ### 📊 Transportation wird Realtime
-Mit Ryde App Nutzerdaten Analysen und Sammlungen, können Unternehmen und Verkehrsbetriebe Realtime Daten zu ihren Strecken einsehen und analysieren. Das ermöglicht schnelles reagieren auf Verkehrveränderungen. 
+Mit Ryde App Nutzerdaten Analysen und Sammlungen, können Unternehmen und Verkehrsbetriebe Realtime Daten zu ihren Strecken einsehen und analysieren. Das ermöglicht schnelles reagieren auf Verkehrveränderungen.
+So können sogar vorhersagen für zukunftige Verkehrssituationen getroffen werden und Fahrpläne variabel erzeugt werden.
 
 ### 🍀 Faktor Umwelt
 Durch Ryde werden alle Möglichkeiten gebündelt und das Reisen entspannter. So werden mehr Pendler von der Straße auf Ryde umsteigen und alle Vorteile genießen. Dadurch wird die Umwelt deutlich geschont. Alle Fortbewegungsmöglichkeiten, uanbhängig von Bus und Bahn, sind E-Mobility Lösungen, die 100% elektrisch fahren und an den Ryde Stations durch die EnBW HyperNetz Schnellladern immer zu 100% Startklar sind.
